@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Controle de Gastos</title>
+</head>
+<body>
+<body>
+    <h1>Controle de Gastos por Dia</h1>
+    <form id="form">
+    <label>Descrição:</label><br>
+    <input type="text" id="descricao" required><br>
+    <label>Valor (R$):</label><br>
+    <input type="number" id="valor" required><br>
+    <label>Data de Vencimento:</label><br>
+    <input type="date" id="vencimento" required><br>
+    <button type="submit">Adicionar</button>
+</form>
+
+    <div id="resumo"></div>
+
+    <table>
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Valor (R$)</th>
+            <th>Vencimento</th>
+            <th>Dias restantes</th>
+            <th>Guardar por dia (R$)</th>
+            <th>Já guardou (R$)</th>
+            <th>Recalcular</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody id="tabela-gastos"></tbody>
+    </table>
+
+    <script src="./main.js"></script>
+</body>
+</html>
